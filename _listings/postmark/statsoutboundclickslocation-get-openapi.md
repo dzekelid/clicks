@@ -3,8 +3,8 @@ swagger: "2.0"
 x-collection-name: Postmark
 x-complete: 0
 info:
-  title: Postmark Get Stats Outbound Clicks Browserfamilies
-  description: Get stats outbound clicks browserfamilies.
+  title: Postmark Get Stats Outbound Clicks Location
+  description: Get stats outbound clicks location.
   version: 1.0.0
 host: spamcheck.postmarkapp.com
 basePath: /
@@ -159,6 +159,34 @@ paths:
       - Outbound
       - Clicks
       - Browserfamilies
+  /stats/outbound/clicks/location:
+    get:
+      summary: Get Stats Outbound Clicks Location
+      description: Get stats outbound clicks location.
+      operationId: getStatsOutboundClicksLocation
+      x-api-path-slug: statsoutboundclickslocation-get
+      parameters:
+      - in: query
+        name: fromdate
+        description: Filter stats starting from the date specified
+      - in: query
+        name: tag
+        description: Filter by tag
+      - in: query
+        name: todate
+        description: Filter stats up to the date specified
+      - in: header
+        name: X-Postmark-Server-Token
+        description: The token associated with the Server on which this request will
+          operate
+      responses:
+        200:
+          description: OK
+      tags:
+      - Stats
+      - Outbound
+      - Clicks
+      - Location
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

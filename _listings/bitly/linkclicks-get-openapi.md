@@ -16,6 +16,41 @@ produces:
 consumes:
 - application/json
 paths:
+  /v3/link/clicks:
+    get:
+      summary: Get Link Clicks
+      description: Returns entries from a user's link history in reverse chronological
+        order.
+      operationId: Get_link_clicks_
+      x-api-path-slug: v3linkclicks-get
+      parameters:
+      - in: query
+        name: format
+        description: Response format
+      - in: query
+        name: limit
+        description: (optional) 1 to 1000 (default=100)
+      - in: query
+        name: link
+        description: a bltly link
+      - in: query
+        name: rollup
+        description: (optional) true or false
+      - in: query
+        name: timezone
+        description: (optional) an integer hour offset from UTC (-14 to 14)
+      - in: query
+        name: unit
+        description: minute, hour, day, week or month
+      - in: query
+        name: units
+        description: an integer representing the time units to query data for
+      responses:
+        200:
+          description: OK
+      tags:
+      - Link
+      - Clicks
   /link/clicks:
     get:
       summary: Link Clicks

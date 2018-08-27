@@ -8,11 +8,44 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postma
 x-kinRank: "8"
 x-alexaRank: "87545"
 tags: Clicks
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/clicks/master/_listings/postmark/apis.md
 specificationVersion: "0.14"
 apis:
+- name: Postmark - Get Messages Outbound Clicks
+  x-api-slug: messagesoutboundclicks-get
+  description: Get messages outbound clicks.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/clicks/master/_listings/postmark/messagesoutboundclicks-get-openapi.md
+- name: Postmark - Get Messages Outbound Clicks Message
+  x-api-slug: messagesoutboundclicksmessageid-get
+  description: Get messages outbound clicks message.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/clicks/master/_listings/postmark/messagesoutboundclicksmessageid-get-openapi.md
+- name: Postmark - Get Stats Outbound Clicks
+  x-api-slug: statsoutboundclicks-get
+  description: Get stats outbound clicks.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/clicks/master/_listings/postmark/statsoutboundclicks-get-openapi.md
 - name: Postmark - Get Stats Outbound Clicks Browserfamilies
   x-api-slug: statsoutboundclicksbrowserfamilies-get
   description: Get stats outbound clicks browserfamilies.
@@ -26,6 +59,28 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/clicks/master/_listings/postmark/statsoutboundclicksbrowserfamilies-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/clicks/master/_listings/postmark/statsoutboundclicksbrowserfamilies-get-openapi.md
+- name: Postmark - Get Stats Outbound Clicks Location
+  x-api-slug: statsoutboundclickslocation-get
+  description: Get stats outbound clicks location.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/clicks/master/_listings/postmark/statsoutboundclickslocation-get-openapi.md
+- name: Postmark - Get Stats Outbound Clicks Platforms
+  x-api-slug: statsoutboundclicksplatforms-get
+  description: Get stats outbound clicks platforms.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/clicks/master/_listings/postmark/statsoutboundclicksplatforms-get-openapi.md
 x-common:
 - type: x--net-library
   url: http://developer.postmarkapp.com/developer-official-libs.html#dot-net
